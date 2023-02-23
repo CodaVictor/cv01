@@ -1,0 +1,31 @@
+Cvičení 1 -----------------------------------------------------------------------------------
+
+Mohou v Javě vznikat memory leaky?
+- Při použití statické proměnné, která obsahuje list s x položkami
+- Při práci se souborem
+
+Můžu v rámci rozhraní (interface) implementovat chování metody?
+- V Javě je při kompilaci vyhozena výjimka
+- Lze to obejít přes klíčové slovo super a výběr konkrétního rozhraní
+
+Jaké druhy návrhových vzorů znáte a uveďte od každého alespoň jeden příklad
+- Behavioural
+- Creational (Singleton)
+- Structural (Iterator)
+
+Je HashMap/Dictionary thread safe?
+- Pouze při čtení, jinak vzniká výjimka
+
+Jak jsou v rámci HashMap/Dictionary řešeny kolize?
+- Jsou řešeny jako vnořená datová struktura
+
+Co to je kritická sekce a jaké máme prostředky k jejímu řešení?
+- Úsek kódu, kde více vlákem přistupuje ke sdílené proměnné a ta je měněna
+- Ošetření pomocí semefarů, mutexu, monitoru
+
+Jaký je rozdíl mezi deadlockem a livelockem?
+- livelock - vlákna se nikdy nedostanou na řadu
+- deadlock - dvě a více vlákem na sebe navzájem čekají
+
+Jak vyřešit deadlock?
+- Neřešit. Odebrat prostředek jednomu vláknu; zavřít aplikaci; najmou personál na jejich odhalování
